@@ -3,14 +3,16 @@ package ru.itsjava.service;
 import ru.itsjava.domain.Coffee;
 
 public class CoffeeServiceImpl implements CoffeeService {
-    Coffee coffee;
+    Coffee order;
 
     @Override
     public Coffee getCoffeeByPrice(double price) {
         for (Coffee coffee : Coffee.values()) {
-            if (coffee.getPrice() == price)
+            if (coffee.getPrice() == price) {
+                order = coffee;
                 break;
+            }
         }
-        return coffee;
+        return order;
     }
 }

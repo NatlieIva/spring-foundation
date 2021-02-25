@@ -1,5 +1,10 @@
 package ru.itsjava.domain;
 
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
+
+@ToString
+@RequiredArgsConstructor
 public enum Coffee {
     AMERICANO("Americano", 100.0),
     LATTE("Latte", 200.0),
@@ -17,10 +22,4 @@ public enum Coffee {
         return name;
     }
 
-    Coffee(String name, double price) {
-        this.name = name;
-        this.price = price;
-
-
-    }
 }
