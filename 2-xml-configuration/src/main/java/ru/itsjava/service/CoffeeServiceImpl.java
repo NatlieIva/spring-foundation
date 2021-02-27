@@ -2,6 +2,8 @@ package ru.itsjava.service;
 
 import ru.itsjava.domain.Coffee;
 
+import java.util.NoSuchElementException;
+
 public class CoffeeServiceImpl implements CoffeeService {
 
     @Override
@@ -10,7 +12,6 @@ public class CoffeeServiceImpl implements CoffeeService {
             if (coffee.getPrice() == price)
                 return coffee;
         }
-        return null;
-//        throw new NoSuchElementException("There is no coffee at this price");
+        throw new NoSuchElementException("There is no coffee at this price");
     }
 }

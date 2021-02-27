@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="1-xml-configuration" />
         <module name="2-xml-configuration" />
+        <module name="3-javabased-configuration" />
       </profile>
     </annotationProcessing>
   </component>
