@@ -14,12 +14,4 @@ public enum Coffee {
     private final String name;
     private final double price;
 
-    public double getPrice() {
-        return price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
 }
