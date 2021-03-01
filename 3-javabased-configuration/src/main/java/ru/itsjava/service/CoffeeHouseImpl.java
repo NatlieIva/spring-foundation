@@ -1,14 +1,12 @@
 package ru.itsjava.service;
 
+import lombok.Data;
+
 import java.util.Scanner;
 
-
+@Data
 public class CoffeeHouseImpl implements CoffeeHouse {
     private final CoffeeService coffeeService;
-
-    public CoffeeHouseImpl(CoffeeService coffeeService) {
-        this.coffeeService = coffeeService;
-    }
 
     @Override
     public void coffeeSale() {

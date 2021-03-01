@@ -1,16 +1,14 @@
 package ru.itsjava.service;
 
+import lombok.Data;
 import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 
+@Data
 @Service
 public class CoffeeHouseImpl implements CoffeeHouse {
     private final CoffeeService coffeeService;
-
-    public CoffeeHouseImpl(CoffeeService coffeeService) {
-        this.coffeeService = coffeeService;
-    }
 
     @Override
     public void coffeeSale() {
