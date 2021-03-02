@@ -1,10 +1,10 @@
 package ru.itsjava.service;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
 
 import java.util.Scanner;
 
-@Data
+@AllArgsConstructor
 public class CoffeeHouseImpl implements CoffeeHouse {
     private final CoffeeService coffeeService;
 
