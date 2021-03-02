@@ -1,9 +1,11 @@
 package ru.itsjava.service;
 
+import org.springframework.stereotype.Service;
 import ru.itsjava.domain.Coffee;
 
 import java.util.NoSuchElementException;
 
+@Service
 public class CoffeeServiceImpl implements CoffeeService {
 
     @Override

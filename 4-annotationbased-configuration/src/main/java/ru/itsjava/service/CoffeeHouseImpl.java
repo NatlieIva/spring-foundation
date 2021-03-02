@@ -1,10 +1,12 @@
 package ru.itsjava.service;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 
 @AllArgsConstructor
+@Service
 public class CoffeeHouseImpl implements CoffeeHouse {
     private final CoffeeService coffeeService;
 
